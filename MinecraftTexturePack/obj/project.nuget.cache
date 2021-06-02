@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "VKqpHLp84XkJUL38Nrmrix/j+s2TscxN1B4btLIGglRSbvYChaKihzxsFo827oKAT++waqzp7EAQrUz8wSbRfQ==",
+  "success": true,
+  "projectFilePath": "Z:\\VisualProjec\\MinecraftTexturePack\\MinecraftTexturePack\\MinecraftTexturePack.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\louka\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.13\\microsoft.netcore.app.host.win-x64.3.1.13.nupkg.sha512"
+  ],
+  "logs": []
+}

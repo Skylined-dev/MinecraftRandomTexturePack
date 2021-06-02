@@ -1,0 +1,5 @@
+Z:\VisualProjec\MinecraftTexturePack\MinecraftTexturePack\bin\Release\netcoreapp3.1\publish\MinecraftTexturePack.exe
+Z:\VisualProjec\MinecraftTexturePack\MinecraftTexturePack\bin\Release\netcoreapp3.1\publish\MinecraftTexturePack.dll
+Z:\VisualProjec\MinecraftTexturePack\MinecraftTexturePack\bin\Release\netcoreapp3.1\publish\MinecraftTexturePack.deps.json
+Z:\VisualProjec\MinecraftTexturePack\MinecraftTexturePack\bin\Release\netcoreapp3.1\publish\MinecraftTexturePack.runtimeconfig.json
+Z:\VisualProjec\MinecraftTexturePack\MinecraftTexturePack\bin\Release\netcoreapp3.1\publish\MinecraftTexturePack.pdb

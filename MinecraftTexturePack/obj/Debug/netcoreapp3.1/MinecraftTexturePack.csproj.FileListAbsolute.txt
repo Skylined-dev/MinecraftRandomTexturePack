@@ -1,0 +1,13 @@
+Z:\VisualProjec\MinecraftTexturePack\MinecraftTexturePack\bin\Debug\netcoreapp3.1\MinecraftTexturePack.exe
+Z:\VisualProjec\MinecraftTexturePack\MinecraftTexturePack\bin\Debug\netcoreapp3.1\MinecraftTexturePack.deps.json
+Z:\VisualProjec\MinecraftTexturePack\MinecraftTexturePack\bin\Debug\netcoreapp3.1\MinecraftTexturePack.runtimeconfig.json
+Z:\VisualProjec\MinecraftTexturePack\MinecraftTexturePack\bin\Debug\netcoreapp3.1\MinecraftTexturePack.runtimeconfig.dev.json
+Z:\VisualProjec\MinecraftTexturePack\MinecraftTexturePack\bin\Debug\netcoreapp3.1\MinecraftTexturePack.dll
+Z:\VisualProjec\MinecraftTexturePack\MinecraftTexturePack\bin\Debug\netcoreapp3.1\MinecraftTexturePack.pdb
+Z:\VisualProjec\MinecraftTexturePack\MinecraftTexturePack\obj\Debug\netcoreapp3.1\MinecraftTexturePack.csprojAssemblyReference.cache
+Z:\VisualProjec\MinecraftTexturePack\MinecraftTexturePack\obj\Debug\netcoreapp3.1\MinecraftTexturePack.AssemblyInfoInputs.cache
+Z:\VisualProjec\MinecraftTexturePack\MinecraftTexturePack\obj\Debug\netcoreapp3.1\MinecraftTexturePack.AssemblyInfo.cs
+Z:\VisualProjec\MinecraftTexturePack\MinecraftTexturePack\obj\Debug\netcoreapp3.1\MinecraftTexturePack.csproj.CoreCompileInputs.cache
+Z:\VisualProjec\MinecraftTexturePack\MinecraftTexturePack\obj\Debug\netcoreapp3.1\MinecraftTexturePack.dll
+Z:\VisualProjec\MinecraftTexturePack\MinecraftTexturePack\obj\Debug\netcoreapp3.1\MinecraftTexturePack.pdb
+Z:\VisualProjec\MinecraftTexturePack\MinecraftTexturePack\obj\Debug\netcoreapp3.1\MinecraftTexturePack.genruntimeconfig.cache

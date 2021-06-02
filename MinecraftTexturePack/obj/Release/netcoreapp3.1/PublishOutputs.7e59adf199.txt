@@ -1,0 +1,5 @@
+Z:\VisualProjec\export\MinecraftTexturePack\MinecraftTexturePack.exe
+Z:\VisualProjec\export\MinecraftTexturePack\MinecraftTexturePack.dll
+Z:\VisualProjec\export\MinecraftTexturePack\MinecraftTexturePack.deps.json
+Z:\VisualProjec\export\MinecraftTexturePack\MinecraftTexturePack.runtimeconfig.json
+Z:\VisualProjec\export\MinecraftTexturePack\MinecraftTexturePack.pdb
