@@ -182,9 +182,11 @@ namespace MinecraftTexturePack
                 string Destnamemcmeta =  string.Format("{0}.mcmeta", newNileName);
 
                 File.Move(infoFichierRenomer.FullName, Destname);
+                Console.WriteLine(string.Format("renome le fichier : {0}, par le fichier {1}", infoFichierRenomer.Name, Destname));
                 if (File.Exists(ActualMcMeta))
                 {
                     File.Move(ActualMcMeta, Destnamemcmeta);
+                    Console.WriteLine(string.Format("renome le fichier : {0}, par le fichier {1}", ActualMcMeta, Destnamemcmeta));
                 }
                 used.Add(newrand);
             }
@@ -241,9 +243,13 @@ namespace MinecraftTexturePack
                 string Destnamemcmeta = string.Format("{0}.mcmeta", newNileName);
 
                 File.Move(infoFichierRenomer.FullName, Destname);
+                Console.WriteLine(string.Format("renome le fichier : {0}, par le fichier {1}", infoFichierRenomer.Name, Destname));
+
                 if (File.Exists(ActualMcMeta))
                 {
                     File.Move(ActualMcMeta, Destnamemcmeta);
+                    Console.WriteLine(string.Format("renome le fichier : {0}, par le fichier {1}", ActualMcMeta, Destnamemcmeta));
+
                 }
                 used.Add(newrand);
             }
@@ -300,9 +306,13 @@ namespace MinecraftTexturePack
                 string Destnamemcmeta = string.Format("{0}.mcmeta", newNileName);
 
                 File.Move(infoFichierRenomer.FullName, Destname);
+                Console.WriteLine(string.Format("renome le fichier : {0}, par le fichier {1}", infoFichierRenomer.Name, Destname));
+
                 if (File.Exists(ActualMcMeta))
                 {
                     File.Move(ActualMcMeta, Destnamemcmeta);
+                    Console.WriteLine(string.Format("renome le fichier : {0}, par le fichier {1}", ActualMcMeta, Destnamemcmeta));
+
                 }
                 used.Add(newrand);
             }
@@ -359,9 +369,13 @@ namespace MinecraftTexturePack
                 string Destnamemcmeta = string.Format("{0}.mcmeta", newNileName);
 
                 File.Move(infoFichierRenomer.FullName, Destname);
+                Console.WriteLine(string.Format("renome le fichier : {0}, par le fichier {1}", infoFichierRenomer.Name, Destname));
+
                 if (File.Exists(ActualMcMeta))
                 {
                     File.Move(ActualMcMeta, Destnamemcmeta);
+                    Console.WriteLine(string.Format("renome le fichier : {0}, par le fichier {1}", ActualMcMeta, Destnamemcmeta));
+
                 }
                 used.Add(newrand);
             }
@@ -418,9 +432,13 @@ namespace MinecraftTexturePack
                 string Destnamemcmeta = string.Format("{0}.mcmeta", newNileName);
 
                 File.Move(infoFichierRenomer.FullName, Destname);
+                Console.WriteLine(string.Format("renome le fichier : {0}, par le fichier {1}", infoFichierRenomer.Name, Destname));
+
                 if (File.Exists(ActualMcMeta))
                 {
                     File.Move(ActualMcMeta, Destnamemcmeta);
+                    Console.WriteLine(string.Format("renome le fichier : {0}, par le fichier {1}", ActualMcMeta, Destnamemcmeta));
+
                 }
                 used.Add(newrand);
             }
