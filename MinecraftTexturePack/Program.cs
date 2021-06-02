@@ -21,6 +21,9 @@ namespace MinecraftTexturePack
         public static string texturepathparticle;
         public static string[] filesparticle;
 
+        public static string texturepatheffect;
+        public static string[] fileseffect;
+
         public static Random rand;
         public static Random Guidrand;
         public static int seed;
@@ -60,9 +63,14 @@ namespace MinecraftTexturePack
                 texturepathitem = "C:\\Users\\" + userName + "\\AppData\\Roaming\\.minecraft\\resourcepacks\\" + resourceName + "\\assets\\minecraft\\textures\\item";
                 texturepatharmor = "C:\\Users\\" + userName + "\\AppData\\Roaming\\.minecraft\\resourcepacks\\" + resourceName + "\\assets\\minecraft\\textures\\models\\armor";
                 texturepathparticle = "C:\\Users\\" + userName + "\\AppData\\Roaming\\.minecraft\\resourcepacks\\" + resourceName + "\\assets\\minecraft\\textures\\particle";
+                texturepatheffect = "C:\\Users\\" + userName + "\\AppData\\Roaming\\.minecraft\\resourcepacks\\" + resourceName + "\\assets\\minecraft\\textures\\mob_effect";
                 filesparticle = Directory.GetFiles(texturepathparticle, "*.png");
                 Array.Sort(filesparticle);
                 Particle();
+
+                fileseffect = Directory.GetFiles(texturepatheffect, "*.png");
+                Array.Sort(fileseffect);
+
             }
             else if(Directory.Exists("C:\\Users\\" + userName + "\\AppData\\Roaming\\.minecraft\\resourcepacks\\" + resourceName + "\\assets\\minecraft\\textures\\blocks")){
                 texturepathblock = "C:\\Users\\" + userName + "\\AppData\\Roaming\\.minecraft\\resourcepacks\\" + resourceName + "\\assets\\minecraft\\textures\\blocks";
@@ -116,6 +124,12 @@ namespace MinecraftTexturePack
         {
             FileToGuidParticle();
             GuidToFileParticle();
+        }
+
+        public static void Effect()
+        {
+            FileToGuidEffect();
+            GuidToFileEffect();
         }
         public static void FileToGuidBlock()
         {
@@ -353,6 +367,63 @@ namespace MinecraftTexturePack
             }
         }
 
+        public static void FileToGuidEffect()
+        {
+            //Dictionary<string, string> textureDic = new Dictionary<string, string>();
 
+
+            //create disctione
+            foreach (string f in fileseffect)
+            {
+                FileInfo infofichier = new FileInfo(f);
+                string g = GenerateSeededGuid().ToString();
+                string mcmetaName = string.Format("{0}.mcmeta", infofichier.FullName);
+                string newMcmetaName = string.Format("{0}{1}", g, infofichier.Extension);
+                string newName = string.Format("{0}{1}", g, infofichier.Extension);
+                //textureDic.Add(newName, infofichier.Name);
+                if (File.Exists(mcmetaName))
+                {
+                    Console.WriteLine("MACMETAFILE !!!");
+                    Console.WriteLine(string.Format("Renome :{0}, par {1}", mcmetaName, mcmetaName.Replace(string.Format("{0}", infofichier.Name), newMcmetaName)));
+                    File.Move(mcmetaName, mcmetaName.Replace(string.Format("{0}", infofichier.Name), newMcmetaName));
+                    //Console.WriteLine(mcmetaName);
+                    //Console.WriteLine(mcmetaName.Replace(string.Format("{0}", infofichier.Name), newMcmetaName));
+                }
+                File.Move(infofichier.FullName, infofichier.FullName.Replace(infofichier.Name, newName));
+                Console.WriteLine(string.Format("renome le fichier : {0}, par le fichier {1}", infofichier.Name, newName));
+            }
+        }
+
+        public static void GuidToFileEffect()
+        {
+
+            string[] RenamedfilesParticle = Directory.GetFiles(texturepatheffect, "*.png");
+            List<int> used = new List<int>();
+            int LimitRand = fileseffect.Length;
+
+            foreach (string f in RenamedfilesParticle)
+            {
+                FileInfo infoFichierRenomer = new FileInfo(f);
+
+                int newrand = rand.Next(0, LimitRand);
+                while (used.Contains(newrand))
+                {
+                    newrand = rand.Next(0, LimitRand);
+                }
+
+                string newNileName = fileseffect[newrand];
+
+                string Destname = newNileName;
+                string ActualMcMeta = string.Format("{0}.mcmeta", infoFichierRenomer.FullName);
+                string Destnamemcmeta = string.Format("{0}.mcmeta", newNileName);
+
+                File.Move(infoFichierRenomer.FullName, Destname);
+                if (File.Exists(ActualMcMeta))
+                {
+                    File.Move(ActualMcMeta, Destnamemcmeta);
+                }
+                used.Add(newrand);
+            }
+        }
     }
 }
